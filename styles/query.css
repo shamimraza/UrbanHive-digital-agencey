@@ -1,6 +1,19 @@
-@media screen and (max-width:576) {
-    .header-container{
+@media screen and (max-width:576px) {
+    .nav-container{
+       flex-direction: column;
+    }
+    .nav-item-container{
         flex-direction: column;
     }
-    
+    .banner-container{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .banner-text, .banner-img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .product-container{
+        grid-template-columns: 1fr;
+    }
 }

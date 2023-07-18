@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital@0;1&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,48 +7,198 @@
     box-sizing: border-box;
 }
 /* nav bar */
-.header-container{
+.nav-container{
     display: flex;
+    align-items: center;
+    min-height: 60px;
     max-width: 1240px;
     margin: 0 auto;
-    min-width: 400px;
-    align-items: center;
-    justify-content: space-between;
+    padding: 10px;
 }
-.nav-item{
-    display: flex;
+nav{
+    background-color: #9376e0;
+}
+.logo-container{
+    display: flex;  
+    align-items: center;  
     width: 50%;
 }
-.nav-item img{
+
+.logo-container img{
     width: 50px;
+    object-fit: cover;
+    margin-right: 10px;
 }
-.nav-bar{
+.logo-container p{
+    font-size: 30px;
+}
+.nav-item-container{
     display: flex;
-    width: 50%;
     justify-content: space-between;
-    list-style: none;
+    align-items: center;
     font-size: 20px;
     font-weight: 400;
-
+    width: 50%;
 }
-.nav-bar a{
+.nav-item-container a{
     text-decoration: none;
     color: white;
 }
-.header-contant{
-    padding: 5px;
-    font-size: 30px;
+.login-section{
+    color: #e893cf;
 }
-header{
-    background-color: #9376e0;
-    color: white;
-    padding: 10px 0;
-}
-.login{
-    background-color:#655f6f;
-    padding: 5px 10px;
+.Login{
+    background-color:  #e893cf;
+    padding: 10px 12px;
     border-radius: 5px;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
 
+/* simple banner section */
+
+.banner-container{
+    display: flex;
+    max-width: 1240px;
+    margin: 50px auto 0;
+    min-height: 50px;
+    background-color: #7080902d;
+    padding: 10px;
+    border-radius: 10px;
+}
+.banner-text{
+    border: 1 px solid red;
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+}
+.banner-img{
+    width: 50%;
+}
+.banner-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.banner-text h1{
+    background-image: linear-gradient(to bottom, red,blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 45px;
+}
+.banner-text p{
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 20px;
+}
+.fa-brands{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.banner-btn{
+    background-color: transparent;
+    padding: 10px 20px;
+}
+.icon-section{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto 20px;
+}
+
+
+/* product section start here */
+
+.product-container{
+    max-width: 1240px;
+    margin: 50px auto 0;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.single-product{
+    background-color:#70809041;
+    border-radius: 10px;
+    padding: 0 10px;
+    box-shadow: 2px 2px 4px black;
+}
+.product-icon-name-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.single-product img{
+    width: 70%;
+    display: block;
+    margin:  0 auto;
+}
+.product-icon{
+    font-size: 15px;
+}
+.product-icon-name-container span{
+    padding: 5px;
+    background-color: #9376e0;
+    border-radius: 50%;
+    margin-left: 5px;
+    color: white;
+}
+
+/* discount section */
+
+.discount-container{
+    padding: 20px 0;
+    border: 1px solid rebeccapurple;
+    background-color: #9376e0;
+    margin: 50px 0;
+    align-items: center;
+}
+.discount-title{
+    max-width: 1240px;
+    min-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.discount-img{
+    width: 50%;
+    position: relative;
+}
+.discount-text{
+    width: 50%;
+}
+.discount-img img{
+    width: 70%;
+    height: 100%;
+    display: block;
+    margin:  0 auto;
+}
+.discount-text h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.discount-text p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.discount-btn{
+    padding: 10px 20px;
+    background-color: #9376e0;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+.discount{
+    width: 60px;
+    height: 60px;
+    background-color:white;
+    color: blue;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 70%;
+    top: 6%;
 }
